@@ -34,10 +34,12 @@ nav .content ul {
 	height: 80px;
 	/*background: pink;*/
 }
-
+nav .content img{
+	margin-top: 10px;
+}
 nav .content ul li {
 	float: left;
-	line-height: 70px;
+	line-height: 90px;
 	margin-right: 15px;
 	font-size: ;
 	font-family: arial;
@@ -50,7 +52,7 @@ nav .content ul li {
 header{
 	width: 100%;
 	height: 700px;
-	background: blue;
+	background:#BBBBBB ;
 	background-image: url(../img/1shuimo.jpg);
 	/*背景图片不重复，只显示一张*/
 	background-repeat: no-repeat;
@@ -75,7 +77,7 @@ header p{
 	height: 200px;
 	/*background: white;*/
 	/*下面四行是处理文字的*/
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	text-align: center;
 	color: white;
@@ -86,6 +88,23 @@ header p{
 	top: 0;
 	bottom: 0;
 	margin: auto;
+}
+header img{
+ /*动画*/
+ width: 50px;
+ height: 40px;
+ position: absolute;
+ top:530px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin:auto;
+ animation: move 1s infinite ;
+}
+@keyframes move{/*动画规则*/
+ 0%{margin-top: 20px;}
+ 50%{margin-top: 60px;}
+ 100%{margin-top: 20px;}
 }
 
 /*professional skills*/
@@ -113,12 +132,12 @@ header p{
 	/*居中*/
 	margin: 0 auto;
 	/*向上移动*/
-	margin-top: -10px;
+	margin-top:-10px;
 }
 .professional .skills_box{
 	width: 100%;
 	/*此处需要加背景图片*/
-	background-image: url(../img/33333333333333.jpg);
+	background-image: url(../img/gufeng111111.jpg);
 	background-repeat: no-repeat;
 	/*调整背景图缩放*/
 	background-size: 100%;
@@ -181,17 +200,14 @@ header p{
 	color: #fff;
 }
 
-
-/*design works*/
-.design_box{
-	width: 1200px;
-	height: 770px;
-	/*background: pink;*/
-	/*居中*/margin: 0 auto;
-	/*整个块向下移动*/
-	margin-top: 20px;
+/*works*/
+.works-box{
+	width: 100%;
+	/*background: rgba(0,0,0,0.5);*/
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
-.design_box h2{
+.works-box h2{/*skill下面字体*/
 	width: 100%;
 	height: 75px;
 	/*下面改变字体属性*/
@@ -200,64 +216,96 @@ header p{
 	/*垂直居中行高*/line-height: 80px;
 	/*字体*/font-family: arial;
 }
-.design_box ul{
-	width:100%;
-	height: 695px;
-	/*background: greenyellow;*/
-}
-.design_box ul li{
-	width: 330px;
-	height: 100%;
-	/*background: blueviolet;*/
-	float: left;
-	margin-right: 105px;
-	/*相对定位*/position: relative;
-}
-.design_box ul li .dot{
-	width: 10px;
-	height: 10px;
-	background: #90291c;
-	/*圆点*/border-radius: 50%;
-	/*绝对定位*/position: absolute;
-	/*居中*/top: 10px;
-	left: 160px;
-	/*隐藏*/display: none;
-}
 
-.design_box ul li h3{
-	width: 100%;
-	height: 30px;
-	/*文字居中*/
-	text-align: center;
-	/*行高*/line-height: 30px;
-	color: #333;
-	/*向下移动，避免遮盖小点*/
-	margin-top: 20px;
+.works-box .tab{
+	width: 1070px;
+	height: 465px;
+/*	background: red;*/
+	margin: 10px auto 0;
 }
-.design_box ul li .works{
-	width: 280px;
-	height: 280px;
-	background: black;
+.works-box .tab .anniu-box{
+	width: 335px;
+	height: 40px;
 	margin: 0 auto;
-	margin-top: 30px;
-	/*圆角*/
-	border-radius:20px;
-	/*溢出的部分隐藏*/
-	overflow: hidden;
-	/*鼠标移入，手型*/
+}
+.works-box .tab .anniu-box .anniu{
+	/*按钮选项*/
+	width: 78px;
+	height: 38px;
+	border: 1px solid black;
+	/*background: green;*/
+	color: black;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	border-radius: 6px;
+	float:left;
+	margin-right: 5px;
 	cursor: pointer;
 }
-
-.design_box ul li .works:hover img{
-	transform: scale(1.2,1.2);
-
+.works-box .tab .anniu-box .anniu:nth-child(4){
+	margin-right: 0;
+}
+.works-box .tab .content-box{
+	width: 1070px;
+	height: 400px;
+	/*background: blue;*/
+	margin-top: 25px;
+}
+.works-box .tab .content-box ul{
+	width: 1070px;
+	height: 400px;
+/*	background: green;*/
+}
+.works-box .tab .content-box ul:nth-child(2){
+	display: none;
+}
+.works-box .tab .content-box ul:nth-child(3){
+	display: none;
+}
+.works-box .tab .content-box ul:nth-child(4){
+	display: none;
+}
+.works-box .tab .content-box ul li{
+	width: 260px;
+	height: 195px;
+	background: black;
+	float: left;
+	overflow: hidden;
+}
+.works-box .tab .content-box ul li:nth-child(1){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(2){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(3){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(4){
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(5){
+	margin-right: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(6){
+	margin-right: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(7){
+	margin-right: 10px;
+}
+/*缩放*/
+.works-box .tab .content-box ul li img{
+	transition:transform 1s;
+	margin-left: -10px;
+}
+.works-box .tab .content-box ul li img:hover{
+	transform:scale(1.2)
 }
 
-.design_box ul li a{
-	color:#8F2525;
-	float: right;
-	margin-top: 10px;
-}
 
 
 /*software skills*/
@@ -266,6 +314,12 @@ header p{
 	height: 450px;
 	background: #555;
 	margin-top: 20px;
+	background-image: url(../img/gufeng555.jpg);
+	background-repeat: no-repeat;
+	/*背景图出现在整个块的中间上面*/
+	background-position: top center;
+	/*调整背景图缩放*/
+	background-size: 100%;
 } 
 .software h2{
 	width: 100%;
@@ -289,19 +343,29 @@ header p{
 	margin-right: 72px;
 	/*background: #654321;*/
 	float: left;
+	position: relative;
 }
 .software ul li .rotate{
 	width: 140px;
 	height: 140px;
-	background: #654321;
+	/*background: #654321;*/
 	transition: transform 0.5s;
 }
 .software ul li .rotate h1{
 	color: white;
 	text-align: center;
-	line-height: 140px;
+	line-height: 50px;
 }
-
+.software ul li .rotate img{
+	margin-left: -3px;
+	margin-top: -3px;
+}
+.software ul li h1{
+	font-size: 29px;
+	position: absolute;
+	left:42px;
+	top: 45px;
+}
 .software ul li .rotate:hover{
 	transform: rotateY(360deg);
 }
@@ -329,7 +393,7 @@ footer .self{
 	border: 3px solid #8D2212;
 	border-radius: 50%;
 	margin: 0 auto;
-	margin-top: -50PX;
+	margin-top: -60px;
 	overflow: hidden;
 }
 footer .self img{
@@ -340,7 +404,7 @@ footer .content{
 	color: #999;
 	width: 1200px;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 10px;
 	text-align: center;
 	line-height: 1.5em;
 }
@@ -384,7 +448,13 @@ footer ul li p{
 }
 
 
-
+.backtop{
+	width: 100px;
+	height: 100px;
+	/*background: yellow;*/
+	position: fixed;
+	right: 0px;
+	bottom:0px;
 
 
 
