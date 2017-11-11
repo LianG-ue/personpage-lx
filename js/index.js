@@ -30,7 +30,7 @@ $(function(){
         })
     });
 	// 顶部导航跳转
-	$("nav .nav li:eq(0)").click(function () {
+	$("nav .content li:eq(0)").click(function () {
 		$({num:$(window).scrollTop()}).animate({num:1000},{
 			duration:1000,
 			step: function(){
@@ -38,7 +38,7 @@ $(function(){
 			}
 		})
 	});
-	$("nav .nav li:eq(1)").click(function () {
+	$("nav .content li:eq(1)").click(function () {
 		$({num:$(window).scrollTop()}).animate({num:1500},{
 			duration:1000,
 			step: function(){
@@ -48,4 +48,3 @@ $(function(){
 	});
 		
 })
-

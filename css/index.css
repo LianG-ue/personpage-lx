@@ -425,6 +425,7 @@ footer ul li{
 	height: 100%;
 	width: 200px;
 	float: left;
+	margin-top: 10px;
 	/*background: red;*/
 }
 footer ul li div{
@@ -447,13 +448,39 @@ footer ul li p{
 	text-align: center;
 }
 
-
+/*页底*/
+footer .dibu{
+	width: 100%;
+	padding: 30px 0;
+	color: rgba(0,0,0,0.9);
+}
+footer .dibu h3{
+	width: 630px;
+	height: 100px;
+	/*background: red;*/
+	margin: 0 auto;
+}
+footer .dibu h3 span{
+	float: left;
+	width: 210px;
+	border-bottom: 1px solid black;
+}
+footer .dibu h3 .line-through{
+	margin-top: 45px;
+}
+footer .dibu h3 .title{
+	margin-top: 15px;
+	font-size: 36px;
+	color: black;
+	text-align: center;
+	border: 0
+}
 .backtop{
 	width: 100px;
 	height: 100px;
 	/*background: yellow;*/
 	position: fixed;
-	right: 0px;
+	right: -20px;
 	bottom:0px;
 
 
